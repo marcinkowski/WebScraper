@@ -14,6 +14,12 @@ $ composer install
 /api/products
 ```
 
+### Console Command:
+
+```sh
+php bin/console api:products
+```
+
 ### To run PHP Unit test
 
 ```sh
