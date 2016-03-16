@@ -1,0 +1,9 @@
+parameters:
+    api.products.web_client_urls.fruits: http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html
+
+services:
+    api.browser_kit_web_client:
+        class: Goutte\Client
+    api.products.web_client:
+        class: ApiBundle\Services\ProductsWebClient\ProductsWebClient
+        arguments: ["@api.browser_kit_web_client", fruits: "%api.products.web_client_urls.fruits%"]

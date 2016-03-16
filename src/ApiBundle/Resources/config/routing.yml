@@ -1,0 +1,3 @@
+api_products_index:
+    path:     /api/products
+    defaults: { _controller: ApiBundle:Products:index }
